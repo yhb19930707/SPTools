@@ -13,6 +13,13 @@
 
 JDK1.8、Maven、Mysql、Redis、IntelliJ IDEA、minio、fastdfs、OpenOffice
 
+#### 分支版本
+
+- [正式版](https://gitee.com/52itstyle/SPTools)
+- [网盘版](https://gitee.com/52itstyle/SPTools/tree/%E7%BD%91%E7%9B%98%E7%89%88/)
+- [纯净版](https://gitee.com/52itstyle/SPTools/tree/%E7%BA%AF%E5%87%80%E7%89%88/)
+
+
 #### 妹子图
 
 [对，就是那个大家经常爬的妹子图！](https://gitee.com/52itstyle/mzitu)
