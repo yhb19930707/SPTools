@@ -134,6 +134,15 @@ JDK1.8、Maven、Mysql、Redis、IntelliJ IDEA、minio、fastdfs、OpenOffice
         <td><img src="https://images.gitee.com/uploads/images/2020/0914/222841_9625378a_87650.png"/></td>
         <td><img src="https://images.gitee.com/uploads/images/2020/0914/222857_1c129d6e_87650.png"/></td>
     </tr>
+ </tr>
+   <tr>
+        <td><img src="https://images.gitee.com/uploads/images/2020/1014/211508_c2da5d43_87650.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2020/1014/211520_f15b978a_87650.png"/></td>
+    </tr>
+  <tr>
+        <td><img src="https://images.gitee.com/uploads/images/2020/1014/211543_b1a0b3b8_87650.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2020/1014/211550_983626ae_87650.png"/></td>
+    </tr>
 </table>
 
 
