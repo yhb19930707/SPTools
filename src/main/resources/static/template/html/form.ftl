@@ -45,6 +45,7 @@ var vm = new Vue({
                      okUtils.ajaxCloud({
                         url:"/${prefix}/${function}/save",
                         param : vm.${function},
+                        json:true,
                         success : function(result) {
                              okLayer.msg.greenTick(result.msg, function () {
                                   dialog.load();
