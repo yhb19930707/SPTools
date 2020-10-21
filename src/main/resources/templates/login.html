@@ -98,6 +98,7 @@
                         success: function (result) {
                             if(result.code==0){
                                 okLayer.msg.greenTick(result.msg, function () {
+                                    sessionStorage.setItem('username', data.field.username);
                                     window.location = "index.html";
                                 });
                             }else{

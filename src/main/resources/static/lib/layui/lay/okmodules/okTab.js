@@ -21,8 +21,9 @@ String.prototype.format = function () {
 /**打开已经打开的tabMenu**/
 let OpenTabMenuFun = function ($, fun) {
    //区分游客和用户登录状态
-   var tabMenu = sessionStorage.getItem("tabMenu");//已经打开的tab页面
-   var tabMenuLeft = sessionStorage.getItem("tabMenuLeft");//tab的位置
+   var username = sessionStorage.getItem('username');
+   var tabMenu = sessionStorage.getItem(username+":tabMenu");//已经打开的tab页面
+   var tabMenuLeft = sessionStorage.getItem(username+":tabMenuLeft");//tab的位置
    if (tabMenu) {
       tabMenu = JSON.parse(tabMenu);
       $("#tabTitle").html(tabMenu.tabTitle).animate({
@@ -43,14 +44,16 @@ function saveTabMenuFun($) {
       tabTitle: tabTitle.html(),
       tabContent: $("#tabContent").html()
    });
-   sessionStorage.setItem('tabMenu', tabMenu);
-   sessionStorage.setItem('tabMenuLeft', $("#tabTitle").css('left'));
+   var username = sessionStorage.getItem('username');
+   sessionStorage.setItem(username+':tabMenu', tabMenu);
+   sessionStorage.setItem(username+':tabMenuLeft', $("#tabTitle").css('left'));
 }
 
 /**tab的位置**/
 function saveTabMenuPosition(num) {
    num = num || $("#tabTitle").css('left');
-   sessionStorage.setItem('tabMenuLeft', num);
+   var username = sessionStorage.getItem('username');
+   sessionStorage.setItem(username+':tabMenuLeft', num);
 }
 
 layui.define(["element", "jquery"], function (exports) {
@@ -549,4 +552,3 @@ layui.define(["element", "jquery"], function (exports) {
 
 
 });
-
