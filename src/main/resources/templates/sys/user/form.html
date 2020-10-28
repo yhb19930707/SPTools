@@ -6,7 +6,7 @@
     <template>
         <i-form ref="checkForm" :model="user" :rules="ruleValidate" :label-width="100">
             <form-item prop="username" label="用户名：">
-                <i-input  maxlength="20" v-model="user.username" placeholder="请输入用户名"></i-input>
+                <i-input  maxlength="20" disabled v-model="user.username" placeholder="请输入用户名"></i-input>
             </form-item>
             <form-item prop="password" label="密码：" v-if="user.userId!=null">
                 <i-input value="******" disabled  placeholder="请输入密码"></i-input>
