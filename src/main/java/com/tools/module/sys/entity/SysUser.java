@@ -124,6 +124,8 @@ public class SysUser extends PageBean implements Serializable{
 	 */
 	@Transient
 	private List<Object> roleNameList;
-
+    
+    @Transient
+    private String oldPassword;
 }
 
