@@ -32,10 +32,10 @@ public class MemberController extends AbstractController {
     @PostMapping("/updatePwd")
     public Result updatePwd(@RequestBody SysUser user){
         SysUser entity = ShiroUtils.getUserEntity();
-        String password = MD5Utils.encrypt(entity.getUsername(),user.getPassword());
+        String password = MD5Utils.encrypt(entity.getUsername(),user.getOldPassword());
         if(entity.getPassword().equals(password)){
-            user.setUserId(entity.getUserId());
-            return sysUserService.updatePwd(user);
+            entity.setPassword(user.getPassword());
+            return sysUserService.updatePwd(entity);
         }else{
             return Result.error("原密码不正确");
         }
